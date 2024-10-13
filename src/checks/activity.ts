@@ -2,6 +2,14 @@ import { Repo } from "@/models/github/repo";
 import { StatusCheck } from "@/types/checks";
 import { differenceInDays } from "date-fns";
 
+/**
+ * Evaluates the activity status of a given repository based on its last pushed date.
+ * It categorizes the activity into success, warning, or error based on the number of days since the last push.
+ * 
+ * @param {Repo} repo - The repository object containing the last pushed date.
+ * @returns {StatusCheck} The status check object indicating the activity status.
+ * @throws {Error} Throws an error if the repo object is invalid or missing the pushed_at property.
+ */
 export default function activity(repo: Repo) {
   const min = 7; // days
   const max = 30; // days

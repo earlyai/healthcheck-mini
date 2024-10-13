@@ -1,6 +1,14 @@
 import { Community } from "@/models/github/community";
 import { StatusCheck } from "@/types/checks";
 
+/**
+ * Checks the status of the Code of Conduct (CoC) for a given community.
+ * Returns a status object indicating whether a CoC is present and its implications.
+ * 
+ * @param community - The community object containing file information.
+ * @returns StatusCheck - An object representing the CoC status and related messages.
+ * @throws No exceptions are thrown.
+ */
 export default function codeOfConduct(community: Community) {
   const response: StatusCheck = {
     title: "Code of Conduct",

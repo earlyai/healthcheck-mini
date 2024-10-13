@@ -1,6 +1,14 @@
 import { Repo } from "@/models/github/repo";
 import { StatusCheck } from "@/types/checks";
 
+/**
+ * Evaluates the repository description and returns a status check object.
+ * It checks for the presence, length, and content of the description against predefined criteria.
+ * 
+ * @param {Repo} repo - The repository object containing the description and homepage.
+ * @returns {StatusCheck} - An object containing the status, description, and additional information.
+ * @throws {Error} - Throws an error if the repo parameter is invalid or not provided.
+ */
 export default function description(repo: Repo) {
   const min = 10;
   const max = 200;

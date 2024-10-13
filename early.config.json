@@ -3,5 +3,6 @@
   "testStructureVariant": "rootFolder",
   "showAllTreeSrcFiles": true,
   "testFramework": "jest",
-  "testSuffix": "test"
+  "testSuffix": "test",
+  "earlPanelEnabled": true
 }
