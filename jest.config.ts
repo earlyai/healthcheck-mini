@@ -35,7 +35,6 @@ const config: Config = {
     "<rootDir>/src/models/",
     "<rootDir>/src/app/",
     "<rootDir>/src/components/",
-    "<rootDir>/src/checks/index.ts",
   ],
   testPathIgnorePatterns: [
     "/node_modules/",
