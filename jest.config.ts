@@ -20,10 +20,14 @@ const config: Config = {
     "!<rootDir>/src/components/",
     "!<rootDir>/src/types/",
     "!<rootDir>/src/models/",
-    "!<rootDir>/src/app/",
-    "!<rootDir>/src/components/",
-    "!<rootDir>/src/app/"
-  ],
+    "!<rootDir>/src/components"
+],
+// moduleNameMapper: {
+//   "^@/components/(.*)$": "<rootDir>/src/components/$1",
+//   "^@/components/ui/(.*)$": "<rootDir>/src/components/ui/$1",
+//   "^@/lib/(.*)$": "<rootDir>/src/lib/$1",
+//   "^@/checks/(.*)$": "<rootDir>/src/checks/$1",
+// },
   transform: {
     "^.+\\.[tj]sx?$": "babel-jest"
   },
@@ -33,8 +37,7 @@ const config: Config = {
     "<rootDir>/tests/",
     "<rootDir>/src/types/",
     "<rootDir>/src/models/",
-    "<rootDir>/src/app/",
-    "<rootDir>/src/components/",
+    "<rootDir>/src/components",
   ],
   testPathIgnorePatterns: [
     "/node_modules/",
